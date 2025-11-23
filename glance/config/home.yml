@@ -1,0 +1,37 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: monday
+        - type: to-do
+
+    - size: full
+      widgets:
+        - type: search
+          search-engine: google
+          bangs:
+              - title: YouTube
+                shortcut: "!yt"
+                url: https://www.youtube.com/results?search_query={QUERY}
+              - title: Github
+                shortcut: "!gh"
+                url: https://github.com/search?q={QUERY}
+        - type: videos
+          channels:
+            - UCXuqSBlHAE6Xw-yeJA0Tunw # Linus Tech Tips
+            - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+            - UCWb-66XSFCV5vgKEbl22R6Q # Enderman
+            - UCD82Iutr2CaK56zwabYozAA # freequense
+            - UCDJuZ7a4kqO4wAy8rzdda-A # corrputtnn
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Isfahan, Iran
+          units: metric # alternatively "imperial"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
