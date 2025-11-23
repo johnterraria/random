@@ -4,7 +4,10 @@
   columns:
     - size: small
       widgets:
-        
+        - type: server-stats
+      servers:
+      - type: local
+        name: Services
     - size: full
       widgets:
 
